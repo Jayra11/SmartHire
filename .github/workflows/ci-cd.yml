@@ -109,7 +109,7 @@ jobs:
       with:
         context: ./backend
         push: true
-        tags: ghcr.io/${{ env.REPO_LOWER }}-backend:latest
+        tags: ghcr.io/jayra11/smarthire-backend:latest
         cache-from: type=registry,ref=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}-backend:buildcache
         cache-to: type=registry,ref=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}-backend:buildcache,mode=max
     
@@ -118,7 +118,7 @@ jobs:
       with:
         context: ./frontend
         push: true
-        tags: ghcr.io/${{ env.REPO_LOWER }}-frontend:latest
+        tags: ghcr.io/jayra11/smarthire-frontend:latest
         cache-from: type=registry,ref=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}-frontend:buildcache
         cache-to: type=registry,ref=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}-frontend:buildcache,mode=max
 
