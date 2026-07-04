@@ -1,0 +1,29 @@
+# Environment variables — NEVER commit real API keys
+.env
+.env.local
+.env.*.local
+backend/.env
+
+# Python
+__pycache__/
+*.pyc
+venv/
+env/
+.venv/
+
+# Node / React
+frontend/node_modules/
+frontend/build/
+npm-debug.log*
+
+# Local dev storage fallback
+backend/local_storage/
+
+# GCP service account keys
+service-account.json
+*.json.key
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
